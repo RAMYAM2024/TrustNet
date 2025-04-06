@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>TrustNet</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="icon.png" alt="TrustNet Logo" class="logo">
+      <h1>TrustNet</h1>
+    </div>
+    
+    <div class="input-section">
+      <textarea id="textInput" placeholder="Enter text to analyze for harmful content..."></textarea>
+      <div id="realtimeFeedback" class="feedback"></div>
+    </div>
+    
+    <button id="analyzeBtn" class="primary-btn">
+      <span class="btn-icon">🔍</span> Analyze Content
+    </button>
+    
+    <div id="results" class="hidden">
+      <div class="result-header">
+        <h2>Safety Analysis</h2>
+        <div class="risk-meter">
+          <div class="risk-level" id="riskLevel">LOW RISK</div>
+          <div class="risk-score" id="riskScore">25%</div>
+        </div>
+      </div>
+      
+      <div class="result-details">
+        <div class="detail-card">
+          <h3>⚠ Harm Detected</h3>
+          <ul id="harmTypes">
+            <li>Mild offensive language</li>
+          </ul>
+        </div>
+        
+        <div class="detail-card">
+          <h3>🔍 Problematic Phrases</h3>
+          <ul id="problematicPhrases">
+            <li>"........"</li>
+          </ul>
+        </div>
+        
+        <div class="detail-card">
+          <h3>💡 Suggested Rewrites</h3>
+          <p id="suggestions">......................................</p>
+        </div>
+      </div>
+      
+      <button id="reportBtn" class="secondary-btn">
+        <span class="btn-icon">📡</span> Report Incident
+      </button>
+    </div>
+    
+    <div class="footer">
+        <button id="scanPageBtn" class="secondary-btn">
+            <span class="btn-icon">🌐</span> Scan Current Page
+          </button>
+      <button id="settingsBtn" class="text-btn">⚙ Settings</button>
+    </div>
+    <script src="popup.js"></script>
+  </div>
+</body>
+</html>

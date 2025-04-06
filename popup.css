@@ -1,0 +1,236 @@
+/* ...existing code... */
+
+body {
+  width: 350px;
+  margin: 0;
+  font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.container {
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin: 0;
+  color: #2c3e50;
+}
+
+.input-section {
+  margin-bottom: 15px;
+}
+
+textarea {
+  width: 100%;
+  height: 120px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  resize: vertical;
+  font-family: inherit;
+  font-size: 0.9rem;
+  background-color: #fefefe;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.feedback {
+  font-size: 0.8rem;
+  margin-top: 5px;
+  min-height: 18px;
+  color: #7f8c8d;
+}
+
+.primary-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.primary-btn:hover {
+  background-color: #2980b9;
+  transform: scale(1.02);
+}
+
+.btn-icon {
+  margin-right: 8px;
+}
+
+.secondary-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #f8f9fa;
+  color: #2c3e50;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  transition: all 0.2s;
+}
+
+.secondary-btn:hover {
+  background-color: #e9ecef;
+}
+
+#scanPageBtn {
+  width: 100%;
+  padding: 10px;
+  background-color: #f8f9fa;
+  color: #2c3e50;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  transition: all 0.2s;
+}
+
+#scanPageBtn:hover {
+  background-color: #e9ecef;
+}
+
+.text-btn {
+  background: none;
+  border: none;
+  color: #7f8c8d;
+  cursor: pointer;
+  font-size: 0.8rem;
+  padding: 5px;
+}
+
+.text-btn:hover {
+  color: #3498db;
+}
+
+.hidden {
+  display: none;
+}
+
+#results {
+  margin-top: 20px;
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.result-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.risk-meter {
+  display: flex;
+  align-items: center;
+}
+
+.risk-level {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.risk-level.low {
+  background-color: #d5f5e3;
+  color: #27ae60;
+}
+
+.risk-level.medium {
+  background-color: #fef9e7;
+  color: #f39c12;
+}
+
+.risk-level.high {
+  background-color: #fadbd8;
+  color: #e74c3c;
+}
+
+.risk-score {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.result-details {
+  background-color: #f8f9fa;
+  border-radius: 6px;
+  padding: 15px;
+}
+
+.detail-card {
+  margin-bottom: 15px;
+}
+
+.detail-card:last-child {
+  margin-bottom: 0;
+}
+
+.detail-card h3 {
+  font-size: 0.9rem;
+  margin: 0 0 8px 0;
+  color: #2c3e50;
+}
+
+.detail-card ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.detail-card li {
+  margin-bottom: 4px;
+  font-size: 0.85rem;
+}
+
+.detail-card p {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.footer {
+  margin-top: 15px;
+  text-align: center;
+}
